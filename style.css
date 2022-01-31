@@ -15,7 +15,8 @@ body {
 .pw-container {
     width: 25rem;
     height: 25rem;
-    border-radius: .25rem;
+    border-radius: .5rem;
+    border: 3px solid whitesmoke;
     background-color: #222;
 }
 .pw-header {
