@@ -8,37 +8,41 @@
     <title>Password Generator</title>
 </head>
 <body>
+    <h1 id="title">Password Generator</h1>
     <div class="pw-container">
         <div class="pw-header">
             <div class="pw" id="pw"></div>
             <div class="pw-buttons">
-                <button class="btn generate-btn" id="generate">Generate Password</button>
                 <button class="btn copy-btn" id="copy">Copy to Clipboard</button>
+                <button class="btn generate-btn" id="generate">Generate Password</button>
             </div>
         </div>
         <div class="pw-body">
             <div class="form-control">
                 <label for="length">Password Length:</label>
-                <input min="1" max="4" type="number" name="password_input" id="length">
+                <input class="txtInput" min="1" max="4" type="number" name="password_input" id="length">
             </div>
             <div class="form-control">
                 <label for="upper">Contain Uppercase Letters:</label>
-                <input type="checkbox" name="password_input" id="upper">
+                <input class="checkInput" type="checkbox" name="password_input" id="upper">
             </div>
             <div class="form-control">
                 <label for="lower">Contain Lowercase Letters:</label>
-                <input type="checkbox" name="password_input" id="lower">
+                <input class="checkInput" type="checkbox" name="password_input" id="lower">
             </div>
             <div class="form-control">
                 <label for="number">Contain Numbers:</label>
-                <input type="checkbox" name="password_input" id="number">
+                <input class="checkInput" type="checkbox" name="password_input" id="number">
             </div>
             <div class="form-control">
                 <label for="symbol">Contain Symbols:</label>
-                <input type="checkbox" name="password_input" id="symbol">
+                <input class="checkInput" type="checkbox" name="password_input" id="symbol">
             </div>
         </div>
     </div>
+    <p id="footer">Built with &#10084; by <a href="https://www.davidmvenegas.com" target="_blank" rel="noopener noreferrer">David Venegas</a></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js"></script>
 </body>
 </html>

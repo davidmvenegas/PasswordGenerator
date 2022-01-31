@@ -37,9 +37,10 @@ function generatePassword() {
     pwEl.innerHTML = password
 }
 
-function copyPassword() {
-    navigator.clipboard.writeText(pwEl.innerText)
-    pwEl.innerText.length > 0 && alert("Copied!")
+async function copyPassword() {
+    await navigator.clipboard.writeText(pwEl.innerText)
+    pwEl.innerText.length > 0 && swal ( "Copied to Clipboard!" , "", "success")
+    pwEl.innerText = ""
 }
 
 generateEl.addEventListener('click', generatePassword)
